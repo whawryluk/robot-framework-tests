@@ -15,9 +15,6 @@ phases:
   build:
     commands:
       - robot --outputdir results tests/
-  post_build:
-    commands:
-      - aws s3 cp results/ s3://robot-framework-test-reports-whawryluk/results/ --recursive --region eu-north-1
 artifacts:
   files:
     - appspec.yml
