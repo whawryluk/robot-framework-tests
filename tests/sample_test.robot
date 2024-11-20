@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    SeleniumLibrary    plugins=WebDriverCreator:webdriver_manager.core.manager.WebDriverManager
 
 *** Variables ***
 ${BASE_URL}    https://robotframework.org/
