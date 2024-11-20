@@ -1,0 +1,42 @@
+# Byte-compiled / generated Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Robot Framework output files
+output.xml
+report.html
+log.html
+*.png
+*.jpg
+debug.log
+screenshots/
+*.xunit.xml
+*.robotdebug
+
+# Test-related directories and files
+results/
+test-output/
+*.tmp
+*.cache
+*.db
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Dependency directories
+node_modules/
+bower_components/
