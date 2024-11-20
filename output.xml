@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2024-11-20T03:25:46.304891" rpa="false" schemaversion="5">
+<suite id="s1" name="Sample Test" source="C:\Users\gagri gagri\rf-playground\pythonProject\tests\sample_test.robot">
+<test id="s1-t1" name="Open Robot Framework Homepage" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-20T03:25:46.546650" level="INFO">Opening browser 'Chrome' to base url 'https://robotframework.org/'.</msg>
+<arg>https://robotframework.org/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-20T03:25:46.546650" elapsed="5.238616"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-20T03:25:51.788780" level="INFO">Page title is 'Robot Framework'.</msg>
+<arg>Robot Framework</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-20T03:25:51.785266" elapsed="0.003514"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-20T03:25:51.789781" elapsed="2.156553"/>
+</kw>
+<status status="PASS" start="2024-11-20T03:25:46.545651" elapsed="7.400683"/>
+</test>
+<status status="PASS" start="2024-11-20T03:25:46.304891" elapsed="7.642446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sample Test">Sample Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
