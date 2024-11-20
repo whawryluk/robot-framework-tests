@@ -7,14 +7,19 @@ phases:
     commands:
       - echo Installing dependencies...
       - pip install --upgrade pip
-      - pip install robotframework robotframework-seleniumlibrary selenium
-      - pip install chromedriver-binary==131.0.6778.85
+      - pip install robotframework robotframework-seleniumlibrary selenium webdriver-manager
   pre_build:
     commands:
       - echo Pre-build stage...
   build:
     commands:
+      - echo Starting tests...
       - robot --outputdir results tests/
+cache:
+  paths:
+    - '/root/.cache/pip/**/*'
+    - '/usr/bin/google-chrome-stable'
+    - '/usr/local/bin/chromedriver'
 artifacts:
   files:
     - appspec.yml

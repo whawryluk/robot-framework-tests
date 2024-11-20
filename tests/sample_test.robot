@@ -1,8 +1,11 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    SeleniumLibrary    plugins=WebDriverCreator:webdriver_manager.core.manager.WebDriverManager
 
 *** Variables ***
 ${BASE_URL}    https://robotframework.org/
+${BROWSER}    Chrome
+${OPTIONS}    headless
 
 *** Test Cases ***
 Open Robot Framework Homepage
@@ -11,6 +14,6 @@ Open Robot Framework Homepage
     [Teardown]    Close Browser
 
 Verify Page URL
-    [Setup]    Open Browser    ${BASE_URL}    Chrome
+    [Setup]    Open Browser    https://robotframework.org    ${BROWSER}    options=--${OPTIONS}
     Location Should Be    ${BASE_URL}
     [Teardown]    Close Browser
