@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - echo Installing dependencies...
+      - pip install --upgrade pip
+      - pip install robotframework robotframework-seleniumlibrary selenium
+      - pip install chromedriver-binary==<version>
+  pre_build:
+    commands:
+      - echo Pre-build stage...
+  build:
+    commands:
+      - robot --outputdir results tests/
+  post_build:
+    commands:
+      - aws s3 cp results/ s3://robot-framework-test-reports-whawryluk/results/ --recursive
+artifacts:
+  files:
+    - appspec.yml
+    - results/**/*
+  discard-paths: no
