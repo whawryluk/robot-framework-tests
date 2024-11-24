@@ -1,6 +1,6 @@
 *** Settings ***
 Library    RequestsLibrary
-Variables    E:/rf-playground/pythonProject/resources/variables.py
+Variables    ../resources/variables.py
 
 *** Test Cases ***
 Login API Test

@@ -4,7 +4,7 @@ def lambda_handler(event, context):
     # EC2 Instance Configuration
     ec2_ip = "13.60.253.208"  # Replace with your EC2 public IP
     ec2_user = "ubuntu"  # Default username for Amazon Linux. Change if needed.
-    key_path = "/path/to/your-key.pem"  # Path to your SSH key in the Lambda environment
+    key_path = "./whawryluk.pem"  # Path to your SSH key in the Lambda environment
 
     # Command to execute
     commands = [

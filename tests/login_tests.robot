@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Variables    E:/rf-playground/pythonProject/resources/variables.py
+Variables    ../resources/variables.py
 
 *** Test Cases ***
 Valid Login
