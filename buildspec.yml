@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+    commands:
+      - pip install robotframework
+      - pip install robotframework-seleniumlibrary
+      - pip install boto3
+
+  build:
+    commands:
+      - echo "Running Robot Framework tests..."
+      - python run_and_upload.py && echo "Tests executed and reports uploaded successfully!"
+
+artifacts:
+  files:
+    - reports/**
