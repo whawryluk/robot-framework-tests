@@ -1,6 +1,6 @@
 *** Settings ***
-Library           SeleniumLibrary
-Variables         ../resources/variables.robot
+Library    SeleniumLibrary
+Variables    E:/rf-playground/pythonProject/resources/variables.py
 
 *** Test Cases ***
 Valid Login
